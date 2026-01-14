@@ -1,0 +1,2136 @@
+{
+  "name": "SalesInvoice",
+  "fields": [
+    {
+      "name": "customer_section",
+      "type": "Section Break",
+      "target": "fa fa-user"
+    },
+    {
+      "name": "naming_series",
+      "type": "Select",
+      "target": "ACC-SINV-.YYYY.-\nACC-SINV-RET-.YYYY.-"
+    },
+    {
+      "name": "customer",
+      "type": "Link",
+      "target": "Customer"
+    },
+    {
+      "name": "customer_name",
+      "type": "Small Text",
+      "target": null
+    },
+    {
+      "name": "tax_id",
+      "type": "Data",
+      "target": null
+    },
+    {
+      "name": "project",
+      "type": "Link",
+      "target": "Project"
+    },
+    {
+      "name": "is_pos",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "pos_profile",
+      "type": "Link",
+      "target": "POS Profile"
+    },
+    {
+      "name": "is_return",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "column_break1",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "company",
+      "type": "Link",
+      "target": "Company"
+    },
+    {
+      "name": "cost_center",
+      "type": "Link",
+      "target": "Cost Center"
+    },
+    {
+      "name": "posting_date",
+      "type": "Date",
+      "target": null
+    },
+    {
+      "name": "posting_time",
+      "type": "Time",
+      "target": null
+    },
+    {
+      "name": "set_posting_time",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "due_date",
+      "type": "Date",
+      "target": null
+    },
+    {
+      "name": "amended_from",
+      "type": "Link",
+      "target": "Sales Invoice"
+    },
+    {
+      "name": "return_against",
+      "type": "Link",
+      "target": "Sales Invoice"
+    },
+    {
+      "name": "update_billed_amount_in_sales_order",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "customer_po_details",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "po_no",
+      "type": "Data",
+      "target": null
+    },
+    {
+      "name": "column_break_23",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "po_date",
+      "type": "Date",
+      "target": null
+    },
+    {
+      "name": "address_and_contact",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "customer_address",
+      "type": "Link",
+      "target": "Address"
+    },
+    {
+      "name": "address_display",
+      "type": "Text Editor",
+      "target": null
+    },
+    {
+      "name": "contact_person",
+      "type": "Link",
+      "target": "Contact"
+    },
+    {
+      "name": "contact_display",
+      "type": "Small Text",
+      "target": null
+    },
+    {
+      "name": "contact_mobile",
+      "type": "Small Text",
+      "target": "Phone"
+    },
+    {
+      "name": "contact_email",
+      "type": "Data",
+      "target": "Email"
+    },
+    {
+      "name": "territory",
+      "type": "Link",
+      "target": "Territory"
+    },
+    {
+      "name": "col_break4",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "shipping_address_name",
+      "type": "Link",
+      "target": "Address"
+    },
+    {
+      "name": "shipping_address",
+      "type": "Text Editor",
+      "target": null
+    },
+    {
+      "name": "company_address",
+      "type": "Link",
+      "target": "Address"
+    },
+    {
+      "name": "company_address_display",
+      "type": "Text Editor",
+      "target": null
+    },
+    {
+      "name": "currency_and_price_list",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "currency",
+      "type": "Link",
+      "target": "Currency"
+    },
+    {
+      "name": "conversion_rate",
+      "type": "Float",
+      "target": null
+    },
+    {
+      "name": "column_break2",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "selling_price_list",
+      "type": "Link",
+      "target": "Price List"
+    },
+    {
+      "name": "price_list_currency",
+      "type": "Link",
+      "target": "Currency"
+    },
+    {
+      "name": "plc_conversion_rate",
+      "type": "Float",
+      "target": null
+    },
+    {
+      "name": "ignore_pricing_rule",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "set_warehouse",
+      "type": "Link",
+      "target": "Warehouse"
+    },
+    {
+      "name": "items_section",
+      "type": "Section Break",
+      "target": "fa fa-shopping-cart"
+    },
+    {
+      "name": "update_stock",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "scan_barcode",
+      "type": "Data",
+      "target": "Barcode"
+    },
+    {
+      "name": "items",
+      "type": "Table",
+      "target": "Sales Invoice Item"
+    },
+    {
+      "name": "pricing_rule_details",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "pricing_rules",
+      "type": "Table",
+      "target": "Pricing Rule Detail"
+    },
+    {
+      "name": "packing_list",
+      "type": "Section Break",
+      "target": "fa fa-suitcase"
+    },
+    {
+      "name": "packed_items",
+      "type": "Table",
+      "target": "Packed Item"
+    },
+    {
+      "name": "product_bundle_help",
+      "type": "HTML",
+      "target": null
+    },
+    {
+      "name": "time_sheet_list",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "timesheets",
+      "type": "Table",
+      "target": "Sales Invoice Timesheet"
+    },
+    {
+      "name": "total_billing_amount",
+      "type": "Currency",
+      "target": "currency"
+    },
+    {
+      "name": "section_break_30",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "total_qty",
+      "type": "Float",
+      "target": null
+    },
+    {
+      "name": "base_total",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "base_net_total",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "column_break_32",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "total",
+      "type": "Currency",
+      "target": "currency"
+    },
+    {
+      "name": "net_total",
+      "type": "Currency",
+      "target": "currency"
+    },
+    {
+      "name": "total_net_weight",
+      "type": "Float",
+      "target": null
+    },
+    {
+      "name": "taxes_section",
+      "type": "Section Break",
+      "target": "fa fa-money"
+    },
+    {
+      "name": "taxes_and_charges",
+      "type": "Link",
+      "target": "Sales Taxes and Charges Template"
+    },
+    {
+      "name": "column_break_38",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "shipping_rule",
+      "type": "Link",
+      "target": "Shipping Rule"
+    },
+    {
+      "name": "tax_category",
+      "type": "Link",
+      "target": "Tax Category"
+    },
+    {
+      "name": "section_break_40",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "taxes",
+      "type": "Table",
+      "target": "Sales Taxes and Charges"
+    },
+    {
+      "name": "sec_tax_breakup",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "other_charges_calculation",
+      "type": "Text Editor",
+      "target": null
+    },
+    {
+      "name": "section_break_43",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "base_total_taxes_and_charges",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "column_break_47",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "total_taxes_and_charges",
+      "type": "Currency",
+      "target": "currency"
+    },
+    {
+      "name": "loyalty_points_redemption",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "loyalty_points",
+      "type": "Int",
+      "target": null
+    },
+    {
+      "name": "loyalty_amount",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "redeem_loyalty_points",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "column_break_77",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "loyalty_program",
+      "type": "Link",
+      "target": "Loyalty Program"
+    },
+    {
+      "name": "loyalty_redemption_account",
+      "type": "Link",
+      "target": "Account"
+    },
+    {
+      "name": "loyalty_redemption_cost_center",
+      "type": "Link",
+      "target": "Cost Center"
+    },
+    {
+      "name": "section_break_49",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "apply_discount_on",
+      "type": "Select",
+      "target": "\nGrand Total\nNet Total"
+    },
+    {
+      "name": "base_discount_amount",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "column_break_51",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "additional_discount_percentage",
+      "type": "Float",
+      "target": null
+    },
+    {
+      "name": "discount_amount",
+      "type": "Currency",
+      "target": "currency"
+    },
+    {
+      "name": "totals",
+      "type": "Section Break",
+      "target": "fa fa-money"
+    },
+    {
+      "name": "base_grand_total",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "base_rounding_adjustment",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "base_rounded_total",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "base_in_words",
+      "type": "Small Text",
+      "target": null
+    },
+    {
+      "name": "column_break5",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "grand_total",
+      "type": "Currency",
+      "target": "currency"
+    },
+    {
+      "name": "rounding_adjustment",
+      "type": "Currency",
+      "target": "currency"
+    },
+    {
+      "name": "rounded_total",
+      "type": "Currency",
+      "target": "currency"
+    },
+    {
+      "name": "in_words",
+      "type": "Small Text",
+      "target": null
+    },
+    {
+      "name": "total_advance",
+      "type": "Currency",
+      "target": "party_account_currency"
+    },
+    {
+      "name": "outstanding_amount",
+      "type": "Currency",
+      "target": "party_account_currency"
+    },
+    {
+      "name": "advances_section",
+      "type": "Section Break",
+      "target": "fa fa-money"
+    },
+    {
+      "name": "allocate_advances_automatically",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "get_advances",
+      "type": "Button",
+      "target": "set_advances"
+    },
+    {
+      "name": "advances",
+      "type": "Table",
+      "target": "Sales Invoice Advance"
+    },
+    {
+      "name": "payment_schedule_section",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "payment_terms_template",
+      "type": "Link",
+      "target": "Payment Terms Template"
+    },
+    {
+      "name": "payment_schedule",
+      "type": "Table",
+      "target": "Payment Schedule"
+    },
+    {
+      "name": "payments_section",
+      "type": "Section Break",
+      "target": "fa fa-money"
+    },
+    {
+      "name": "cash_bank_account",
+      "type": "Link",
+      "target": "Account"
+    },
+    {
+      "name": "payments",
+      "type": "Table",
+      "target": "Sales Invoice Payment"
+    },
+    {
+      "name": "section_break_84",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "base_paid_amount",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "column_break_86",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "paid_amount",
+      "type": "Currency",
+      "target": "currency"
+    },
+    {
+      "name": "section_break_88",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "base_change_amount",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "column_break_90",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "change_amount",
+      "type": "Currency",
+      "target": "currency"
+    },
+    {
+      "name": "account_for_change_amount",
+      "type": "Link",
+      "target": "Account"
+    },
+    {
+      "name": "write_off_amount",
+      "type": "Currency",
+      "target": "currency"
+    },
+    {
+      "name": "base_write_off_amount",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "write_off_outstanding_amount_automatically",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "column_break_74",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "write_off_account",
+      "type": "Link",
+      "target": "Account"
+    },
+    {
+      "name": "write_off_cost_center",
+      "type": "Link",
+      "target": "Cost Center"
+    },
+    {
+      "name": "terms_section_break",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "tc_name",
+      "type": "Link",
+      "target": "Terms and Conditions"
+    },
+    {
+      "name": "terms",
+      "type": "Text Editor",
+      "target": null
+    },
+    {
+      "name": "edit_printing_settings",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "letter_head",
+      "type": "Link",
+      "target": "Letter Head"
+    },
+    {
+      "name": "group_same_items",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "language",
+      "type": "Link",
+      "target": "Language"
+    },
+    {
+      "name": "column_break_84",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "select_print_heading",
+      "type": "Link",
+      "target": "Print Heading"
+    },
+    {
+      "name": "more_information",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "inter_company_invoice_reference",
+      "type": "Link",
+      "target": "Purchase Invoice"
+    },
+    {
+      "name": "customer_group",
+      "type": "Link",
+      "target": "Customer Group"
+    },
+    {
+      "name": "is_discounted",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "col_break23",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "status",
+      "type": "Select",
+      "target": "\nDraft\nReturn\nCredit Note Issued\nSubmitted\nPaid\nPartly Paid\nUnpaid\nUnpaid and Discounted\nPartly Paid and Discounted\nOverdue and Discounted\nOverdue\nCancelled\nInternal Transfer"
+    },
+    {
+      "name": "more_info",
+      "type": "Section Break",
+      "target": "fa fa-file-text"
+    },
+    {
+      "name": "debit_to",
+      "type": "Link",
+      "target": "Account"
+    },
+    {
+      "name": "party_account_currency",
+      "type": "Link",
+      "target": "Currency"
+    },
+    {
+      "name": "is_opening",
+      "type": "Select",
+      "target": "No\nYes"
+    },
+    {
+      "name": "column_break8",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "remarks",
+      "type": "Small Text",
+      "target": null
+    },
+    {
+      "name": "sales_team_section_break",
+      "type": "Section Break",
+      "target": "fa fa-group"
+    },
+    {
+      "name": "sales_partner",
+      "type": "Link",
+      "target": "Sales Partner"
+    },
+    {
+      "name": "column_break10",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "commission_rate",
+      "type": "Float",
+      "target": null
+    },
+    {
+      "name": "total_commission",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "section_break2",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "sales_team",
+      "type": "Table",
+      "target": "Sales Team"
+    },
+    {
+      "name": "subscription_section",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "from_date",
+      "type": "Date",
+      "target": null
+    },
+    {
+      "name": "to_date",
+      "type": "Date",
+      "target": null
+    },
+    {
+      "name": "column_break_140",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "auto_repeat",
+      "type": "Link",
+      "target": "Auto Repeat"
+    },
+    {
+      "name": "update_auto_repeat_reference",
+      "type": "Button",
+      "target": null
+    },
+    {
+      "name": "against_income_account",
+      "type": "Small Text",
+      "target": null
+    },
+    {
+      "name": "accounting_dimensions_section",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "dimension_col_break",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "is_consolidated",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "is_internal_customer",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "company_tax_id",
+      "type": "Data",
+      "target": null
+    },
+    {
+      "name": "unrealized_profit_loss_account",
+      "type": "Link",
+      "target": "Account"
+    },
+    {
+      "name": "represents_company",
+      "type": "Link",
+      "target": "Company"
+    },
+    {
+      "name": "set_target_warehouse",
+      "type": "Link",
+      "target": "Warehouse"
+    },
+    {
+      "name": "is_debit_note",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "disable_rounded_total",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "additional_discount_account",
+      "type": "Link",
+      "target": "Account"
+    },
+    {
+      "name": "dispatch_address_name",
+      "type": "Link",
+      "target": "Address"
+    },
+    {
+      "name": "dispatch_address",
+      "type": "Text Editor",
+      "target": null
+    },
+    {
+      "name": "ignore_default_payment_terms_template",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "total_billing_hours",
+      "type": "Float",
+      "target": null
+    },
+    {
+      "name": "amount_eligible_for_commission",
+      "type": "Currency",
+      "target": "Company:company:default_currency"
+    },
+    {
+      "name": "subscription",
+      "type": "Link",
+      "target": "Subscription"
+    },
+    {
+      "name": "is_cash_or_non_trade_discount",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "contact_and_address_tab",
+      "type": "Tab Break",
+      "target": null
+    },
+    {
+      "name": "payments_tab",
+      "type": "Tab Break",
+      "target": null
+    },
+    {
+      "name": "terms_tab",
+      "type": "Tab Break",
+      "target": null
+    },
+    {
+      "name": "more_info_tab",
+      "type": "Tab Break",
+      "target": null
+    },
+    {
+      "name": "connections_tab",
+      "type": "Tab Break",
+      "target": null
+    },
+    {
+      "name": "column_break_14",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "column_break_39",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "section_break_42",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "column_break_55",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "shipping_address_section",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "company_address_section",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "shipping_addr_col_break",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "company_addr_col_break",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "column_break_52",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "section_break_104",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "column_break_106",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "write_off_section",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "incoterm",
+      "type": "Link",
+      "target": "Incoterm"
+    },
+    {
+      "name": "named_place",
+      "type": "Data",
+      "target": null
+    },
+    {
+      "name": "only_include_allocated_payments",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "use_company_roundoff_cost_center",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "update_billed_amount_in_delivery_note",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "dont_create_loyalty_points",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "coupon_code",
+      "type": "Link",
+      "target": "Coupon Code"
+    },
+    {
+      "name": "update_outstanding_for_self",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "column_break_imbx",
+      "type": "Column Break",
+      "target": null
+    },
+    {
+      "name": "utm_medium",
+      "type": "Link",
+      "target": "UTM Medium"
+    },
+    {
+      "name": "utm_content",
+      "type": "Data",
+      "target": null
+    },
+    {
+      "name": "utm_campaign",
+      "type": "Link",
+      "target": "UTM Campaign"
+    },
+    {
+      "name": "utm_source",
+      "type": "Link",
+      "target": "UTM Source"
+    },
+    {
+      "name": "company_contact_person",
+      "type": "Link",
+      "target": "Contact"
+    },
+    {
+      "name": "is_created_using_pos",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "pos_closing_entry",
+      "type": "Link",
+      "target": "POS Closing Entry"
+    },
+    {
+      "name": "last_scanned_warehouse",
+      "type": "Data",
+      "target": null
+    },
+    {
+      "name": "has_subcontracted",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "item_wise_tax_details",
+      "type": "Table",
+      "target": "Item Wise Tax Detail"
+    },
+    {
+      "name": "apply_tds",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "section_tax_withholding_entry",
+      "type": "Section Break",
+      "target": null
+    },
+    {
+      "name": "tax_withholding_group",
+      "type": "Link",
+      "target": "Tax Withholding Group"
+    },
+    {
+      "name": "tax_withholding_entries",
+      "type": "Table",
+      "target": "Tax Withholding Entry"
+    },
+    {
+      "name": "ignore_tax_withholding_threshold",
+      "type": "Check",
+      "target": null
+    },
+    {
+      "name": "override_tax_withholding_entries",
+      "type": "Check",
+      "target": null
+    }
+  ],
+  "methods": [
+    {
+      "name": "__init__",
+      "calls": [
+        "super"
+      ]
+    },
+    {
+      "name": "set_indicator",
+      "calls": [
+        "nowdate",
+        "getdate",
+        "_",
+        "cint"
+      ]
+    },
+    {
+      "name": "onload",
+      "calls": [
+        "super"
+      ]
+    },
+    {
+      "name": "validate",
+      "calls": [
+        "validate_inter_company_party",
+        "cint",
+        "validate_service_stop_date",
+        "SalesTaxWithholding",
+        "validate_loyalty_points",
+        "validate_coupon_code",
+        "super",
+        "any"
+      ]
+    },
+    {
+      "name": "validate_accounts",
+      "calls": []
+    },
+    {
+      "name": "validate_for_repost",
+      "calls": [
+        "validate_docs_for_deferred_accounting",
+        "validate_docs_for_voucher_types"
+      ]
+    },
+    {
+      "name": "validate_fixed_asset",
+      "calls": [
+        "_"
+      ]
+    },
+    {
+      "name": "validate_item_cost_centers",
+      "calls": []
+    },
+    {
+      "name": "validate_income_account",
+      "calls": [
+        "_",
+        "validate_account_head"
+      ]
+    },
+    {
+      "name": "before_save",
+      "calls": []
+    },
+    {
+      "name": "before_submit",
+      "calls": []
+    },
+    {
+      "name": "on_submit",
+      "calls": [
+        "cint",
+        "update_coupon_code_count",
+        "update_company_current_month_sales",
+        "update_linked_doc",
+        "SalesTaxWithholding"
+      ]
+    },
+    {
+      "name": "validate_pos_return",
+      "calls": [
+        "_"
+      ]
+    },
+    {
+      "name": "validate_pos_paid_amount",
+      "calls": [
+        "flt",
+        "_",
+        "len"
+      ]
+    },
+    {
+      "name": "check_if_consolidated_invoice",
+      "calls": [
+        "_",
+        "get_link_to_form"
+      ]
+    },
+    {
+      "name": "check_if_created_using_pos_and_pos_closing_entry_generated",
+      "calls": [
+        "_",
+        "get_link_to_form"
+      ]
+    },
+    {
+      "name": "before_cancel",
+      "calls": [
+        "super"
+      ]
+    },
+    {
+      "name": "on_cancel",
+      "calls": [
+        "check_if_return_invoice_linked_with_payment_entry",
+        "update_coupon_code_count",
+        "update_company_current_month_sales",
+        "SalesTaxWithholding",
+        "unlink_inter_company_doc",
+        "super"
+      ]
+    },
+    {
+      "name": "update_status_updater_args",
+      "calls": [
+        "cint"
+      ]
+    },
+    {
+      "name": "check_credit_limit",
+      "calls": [
+        "check_credit_limit"
+      ]
+    },
+    {
+      "name": "unlink_sales_invoice_from_timesheets",
+      "calls": []
+    },
+    {
+      "name": "cancel_pos_invoice_credit_note_generated_during_sales_invoice_mode",
+      "calls": []
+    },
+    {
+      "name": "set_missing_values",
+      "calls": [
+        "get_party_account",
+        "get_due_date",
+        "cint",
+        "super"
+      ]
+    },
+    {
+      "name": "reset_mode_of_payments",
+      "calls": [
+        "update_multi_mode_option"
+      ]
+    },
+    {
+      "name": "update_time_sheet",
+      "calls": []
+    },
+    {
+      "name": "update_billed_qty_in_scio",
+      "calls": [
+        "Case",
+        "list"
+      ]
+    },
+    {
+      "name": "update_time_sheet_detail",
+      "calls": []
+    },
+    {
+      "name": "on_update_after_submit",
+      "calls": []
+    },
+    {
+      "name": "set_paid_amount",
+      "calls": [
+        "flt"
+      ]
+    },
+    {
+      "name": "set_account_for_mode_of_payment",
+      "calls": [
+        "get_bank_cash_account"
+      ]
+    },
+    {
+      "name": "validate_time_sheets_are_submitted",
+      "calls": [
+        "_"
+      ]
+    },
+    {
+      "name": "set_pos_fields",
+      "calls": [
+        "ItemDetailsCtx",
+        "get_pos_profile_item_details_",
+        "cint",
+        "update_multi_mode_option",
+        "len",
+        "get_pos_profile"
+      ]
+    },
+    {
+      "name": "get_company_abbr",
+      "calls": []
+    },
+    {
+      "name": "validate_debit_to_acc",
+      "calls": [
+        "get_party_account",
+        "_"
+      ]
+    },
+    {
+      "name": "clear_unallocated_mode_of_payments",
+      "calls": []
+    },
+    {
+      "name": "validate_with_previous_doc",
+      "calls": [
+        "super",
+        "cint"
+      ]
+    },
+    {
+      "name": "set_against_income_account",
+      "calls": []
+    },
+    {
+      "name": "force_set_against_income_account",
+      "calls": []
+    },
+    {
+      "name": "add_remarks",
+      "calls": [
+        "formatdate",
+        "_"
+      ]
+    },
+    {
+      "name": "validate_auto_set_posting_time",
+      "calls": []
+    },
+    {
+      "name": "so_dn_required",
+      "calls": [
+        "_",
+        "msgprint"
+      ]
+    },
+    {
+      "name": "validate_proj_cust",
+      "calls": [
+        "throw",
+        "_"
+      ]
+    },
+    {
+      "name": "validate_pos",
+      "calls": [
+        "abs",
+        "flt",
+        "_"
+      ]
+    },
+    {
+      "name": "validate_created_using_pos",
+      "calls": [
+        "_"
+      ]
+    },
+    {
+      "name": "validate_full_payment",
+      "calls": [
+        "flt",
+        "_"
+      ]
+    },
+    {
+      "name": "validate_pos_opening_entry",
+      "calls": [
+        "_",
+        "len"
+      ]
+    },
+    {
+      "name": "validate_warehouse",
+      "calls": [
+        "super",
+        "_"
+      ]
+    },
+    {
+      "name": "validate_delivery_note",
+      "calls": [
+        "comma_and",
+        "cint",
+        "_"
+      ]
+    },
+    {
+      "name": "allow_write_off_only_on_pos",
+      "calls": []
+    },
+    {
+      "name": "validate_subcontracted_sales_order",
+      "calls": [
+        "all",
+        "_"
+      ]
+    },
+    {
+      "name": "validate_scio_self_rm_qty",
+      "calls": [
+        "max",
+        "_",
+        "get_link_to_form"
+      ]
+    },
+    {
+      "name": "validate_write_off_account",
+      "calls": [
+        "flt",
+        "_",
+        "msgprint"
+      ]
+    },
+    {
+      "name": "validate_account_for_change_amount",
+      "calls": [
+        "flt",
+        "_",
+        "msgprint"
+      ]
+    },
+    {
+      "name": "validate_dropship_item",
+      "calls": [
+        "any",
+        "cint",
+        "_"
+      ]
+    },
+    {
+      "name": "update_current_stock",
+      "calls": []
+    },
+    {
+      "name": "update_packing_list",
+      "calls": [
+        "cint",
+        "make_packing_list"
+      ]
+    },
+    {
+      "name": "set_billing_hours_and_amount",
+      "calls": []
+    },
+    {
+      "name": "update_timesheet_billing_for_project",
+      "calls": []
+    },
+    {
+      "name": "is_auto_fetch_timesheet_enabled",
+      "calls": []
+    },
+    {
+      "name": "add_timesheet_data",
+      "calls": [
+        "get_projectwise_timesheet_data"
+      ]
+    },
+    {
+      "name": "calculate_billing_amount_for_timesheet",
+      "calls": [
+        "sum",
+        "timesheet_sum"
+      ]
+    },
+    {
+      "name": "timesheet_sum",
+      "calls": [
+        "sum"
+      ]
+    },
+    {
+      "name": "get_warehouse",
+      "calls": [
+        "_",
+        "msgprint"
+      ]
+    },
+    {
+      "name": "set_income_account_for_fixed_assets",
+      "calls": []
+    },
+    {
+      "name": "check_prev_docstatus",
+      "calls": [
+        "throw",
+        "_"
+      ]
+    },
+    {
+      "name": "split_asset_based_on_sale_qty",
+      "calls": [
+        "split_asset",
+        "_"
+      ]
+    },
+    {
+      "name": "get_asset_qty",
+      "calls": [
+        "list",
+        "flt",
+        "dict"
+      ]
+    },
+    {
+      "name": "process_asset_depreciation",
+      "calls": []
+    },
+    {
+      "name": "depreciate_asset_on_sale",
+      "calls": [
+        "depreciate_asset"
+      ]
+    },
+    {
+      "name": "get_note_for_asset_sale",
+      "calls": [
+        "_",
+        "get_link_to_form"
+      ]
+    },
+    {
+      "name": "restore_asset",
+      "calls": [
+        "reverse_depreciation_entry_made_on_disposal",
+        "reset_depreciation_schedule"
+      ]
+    },
+    {
+      "name": "get_note_for_asset_return",
+      "calls": [
+        "_",
+        "get_link_to_form"
+      ]
+    },
+    {
+      "name": "update_asset",
+      "calls": [
+        "add_asset_activity",
+        "_update_asset",
+        "_"
+      ]
+    },
+    {
+      "name": "_update_asset",
+      "calls": [
+        "add_asset_activity"
+      ]
+    },
+    {
+      "name": "get_disposal_date",
+      "calls": []
+    },
+    {
+      "name": "make_gl_entries",
+      "calls": [
+        "make_gl_entries",
+        "cint",
+        "make_reverse_gl_entries",
+        "update_voucher_outstanding"
+      ]
+    },
+    {
+      "name": "get_gl_entries",
+      "calls": [
+        "make_regional_gl_entries",
+        "merge_similar_entries"
+      ]
+    },
+    {
+      "name": "make_customer_gl_entry",
+      "calls": [
+        "flt"
+      ]
+    },
+    {
+      "name": "make_tax_gl_entries",
+      "calls": [
+        "get_account_currency",
+        "flt",
+        "cint"
+      ]
+    },
+    {
+      "name": "make_internal_transfer_gl_entries",
+      "calls": [
+        "get_account_currency",
+        "flt"
+      ]
+    },
+    {
+      "name": "make_item_gl_entries",
+      "calls": [
+        "get_account_currency",
+        "super",
+        "flt",
+        "cint"
+      ]
+    },
+    {
+      "name": "get_gl_entries_for_fixed_asset",
+      "calls": [
+        "get_gl_entries_on_asset_disposal",
+        "get_gl_entries_on_asset_regain"
+      ]
+    },
+    {
+      "name": "enable_discount_accounting",
+      "calls": [
+        "cint",
+        "hasattr"
+      ]
+    },
+    {
+      "name": "make_loyalty_point_redemption_gle",
+      "calls": [
+        "cstr",
+        "cint"
+      ]
+    },
+    {
+      "name": "make_pos_gl_entries",
+      "calls": [
+        "get_account_currency",
+        "flt",
+        "cint"
+      ]
+    },
+    {
+      "name": "get_gle_for_change_amount",
+      "calls": [
+        "flt",
+        "_",
+        "cint"
+      ]
+    },
+    {
+      "name": "make_write_off_gl_entry",
+      "calls": [
+        "get_account_currency",
+        "flt",
+        "cint"
+      ]
+    },
+    {
+      "name": "make_gle_for_rounding_adjustment",
+      "calls": [
+        "flt",
+        "_",
+        "get_round_off_account_and_cost_center",
+        "get_link_to_form"
+      ]
+    },
+    {
+      "name": "update_billing_status_in_dn",
+      "calls": [
+        "set",
+        "update_billed_amount_based_on_so"
+      ]
+    },
+    {
+      "name": "on_recurring",
+      "calls": []
+    },
+    {
+      "name": "update_project",
+      "calls": [
+        "list",
+        "set"
+      ]
+    },
+    {
+      "name": "verify_payment_amount_is_positive",
+      "calls": [
+        "_"
+      ]
+    },
+    {
+      "name": "verify_payment_amount_is_negative",
+      "calls": [
+        "_"
+      ]
+    },
+    {
+      "name": "make_loyalty_point_entry",
+      "calls": [
+        "getdate",
+        "cint",
+        "add_days",
+        "flt",
+        "get_loyalty_program_details_with_points"
+      ]
+    },
+    {
+      "name": "delete_loyalty_point_entry",
+      "calls": [
+        "_"
+      ]
+    },
+    {
+      "name": "set_loyalty_program_tier",
+      "calls": [
+        "get_loyalty_program_details_with_points"
+      ]
+    },
+    {
+      "name": "get_returned_amount",
+      "calls": [
+        "Sum",
+        "abs"
+      ]
+    },
+    {
+      "name": "apply_loyalty_points",
+      "calls": [
+        "get_redemption_details",
+        "flt",
+        "get_loyalty_point_entries"
+      ]
+    },
+    {
+      "name": "set_status",
+      "calls": [
+        "getdate",
+        "get_total_in_party_account_currency",
+        "flt",
+        "get_discounting_status",
+        "is_overdue"
+      ]
+    },
+    {
+      "name": "is_subcontracted",
+      "calls": [
+        "bool"
+      ]
+    },
+    {
+      "name": "get_total_in_party_account_currency",
+      "calls": [
+        "flt"
+      ]
+    },
+    {
+      "name": "is_overdue",
+      "calls": [
+        "sum",
+        "flt",
+        "getdate"
+      ]
+    },
+    {
+      "name": "get_discounting_status",
+      "calls": []
+    },
+    {
+      "name": "validate_inter_company_party",
+      "calls": [
+        "_"
+      ]
+    },
+    {
+      "name": "update_linked_doc",
+      "calls": []
+    },
+    {
+      "name": "unlink_inter_company_doc",
+      "calls": []
+    },
+    {
+      "name": "get_list_context",
+      "calls": [
+        "get_list_context",
+        "_"
+      ]
+    },
+    {
+      "name": "get_bank_cash_account",
+      "calls": [
+        "_",
+        "get_link_to_form"
+      ]
+    },
+    {
+      "name": "make_maintenance_schedule",
+      "calls": [
+        "get_mapped_doc"
+      ]
+    },
+    {
+      "name": "make_delivery_note",
+      "calls": [
+        "get_mapped_doc",
+        "flt"
+      ]
+    },
+    {
+      "name": "set_missing_values",
+      "calls": []
+    },
+    {
+      "name": "update_item",
+      "calls": [
+        "flt"
+      ]
+    },
+    {
+      "name": "make_sales_return",
+      "calls": [
+        "make_return_doc"
+      ]
+    },
+    {
+      "name": "get_inter_company_details",
+      "calls": [
+        "get_internal_party",
+        "_"
+      ]
+    },
+    {
+      "name": "get_internal_party",
+      "calls": [
+        "len"
+      ]
+    },
+    {
+      "name": "validate_inter_company_transaction",
+      "calls": [
+        "_",
+        "get_inter_company_details"
+      ]
+    },
+    {
+      "name": "make_inter_company_purchase_invoice",
+      "calls": [
+        "make_inter_company_transaction"
+      ]
+    },
+    {
+      "name": "make_regional_gl_entries",
+      "calls": []
+    },
+    {
+      "name": "make_inter_company_transaction",
+      "calls": [
+        "set_purchase_references",
+        "get_inter_company_details",
+        "update_address",
+        "get_received_items",
+        "flt",
+        "_validate_address_link",
+        "validate_inter_company_transaction",
+        "get_mapped_doc",
+        "update_taxes"
+      ]
+    },
+    {
+      "name": "set_missing_values",
+      "calls": [
+        "set_purchase_references"
+      ]
+    },
+    {
+      "name": "update_details",
+      "calls": [
+        "update_address",
+        "update_taxes",
+        "_validate_address_link"
+      ]
+    },
+    {
+      "name": "_validate_address_link",
+      "calls": []
+    },
+    {
+      "name": "update_item",
+      "calls": [
+        "flt"
+      ]
+    },
+    {
+      "name": "get_received_items",
+      "calls": [
+        "list"
+      ]
+    },
+    {
+      "name": "set_purchase_references",
+      "calls": [
+        "get_pd_details",
+        "get_sales_invoice_details",
+        "list",
+        "update_pr_items",
+        "update_pi_items",
+        "get_delivery_note_details"
+      ]
+    },
+    {
+      "name": "update_pi_items",
+      "calls": []
+    },
+    {
+      "name": "update_pr_items",
+      "calls": []
+    },
+    {
+      "name": "get_delivery_note_details",
+      "calls": []
+    },
+    {
+      "name": "get_sales_invoice_details",
+      "calls": []
+    },
+    {
+      "name": "get_pd_details",
+      "calls": [
+        "list"
+      ]
+    },
+    {
+      "name": "update_taxes",
+      "calls": [
+        "get_party_details"
+      ]
+    },
+    {
+      "name": "update_address",
+      "calls": [
+        "get_fetch_values",
+        "get_address_display"
+      ]
+    },
+    {
+      "name": "get_loyalty_programs",
+      "calls": [
+        "get_loyalty_programs",
+        "len"
+      ]
+    },
+    {
+      "name": "create_invoice_discounting",
+      "calls": []
+    },
+    {
+      "name": "update_multi_mode_option",
+      "calls": [
+        "get_link_to_form",
+        "get_mode_of_payments_info",
+        "append_payment",
+        "_"
+      ]
+    },
+    {
+      "name": "append_payment",
+      "calls": []
+    },
+    {
+      "name": "get_all_mode_of_payments",
+      "calls": []
+    },
+    {
+      "name": "get_mode_of_payments_info",
+      "calls": []
+    },
+    {
+      "name": "get_mode_of_payment_info",
+      "calls": []
+    },
+    {
+      "name": "create_dunning",
+      "calls": [
+        "get_mapped_doc",
+        "get_dunning_letter_text",
+        "getdate",
+        "len"
+      ]
+    },
+    {
+      "name": "postprocess_dunning",
+      "calls": [
+        "get_dunning_letter_text",
+        "len"
+      ]
+    },
+    {
+      "name": "check_if_return_invoice_linked_with_payment_entry",
+      "calls": [
+        "_",
+        "len",
+        "get_link_to_form"
+      ]
+    }
+  ],
+  "relationships": {
+    "customer": "Customer",
+    "project": "Project",
+    "pos_profile": "POS Profile",
+    "company": "Company",
+    "cost_center": "Cost Center",
+    "amended_from": "Sales Invoice",
+    "return_against": "Sales Invoice",
+    "customer_address": "Address",
+    "contact_person": "Contact",
+    "territory": "Territory",
+    "shipping_address_name": "Address",
+    "company_address": "Address",
+    "currency": "Currency",
+    "selling_price_list": "Price List",
+    "price_list_currency": "Currency",
+    "set_warehouse": "Warehouse",
+    "items": "Sales Invoice Item",
+    "pricing_rules": "Pricing Rule Detail",
+    "packed_items": "Packed Item",
+    "timesheets": "Sales Invoice Timesheet",
+    "taxes_and_charges": "Sales Taxes and Charges Template",
+    "shipping_rule": "Shipping Rule",
+    "tax_category": "Tax Category",
+    "taxes": "Sales Taxes and Charges",
+    "loyalty_program": "Loyalty Program",
+    "loyalty_redemption_account": "Account",
+    "loyalty_redemption_cost_center": "Cost Center",
+    "advances": "Sales Invoice Advance",
+    "payment_terms_template": "Payment Terms Template",
+    "payment_schedule": "Payment Schedule",
+    "cash_bank_account": "Account",
+    "payments": "Sales Invoice Payment",
+    "account_for_change_amount": "Account",
+    "write_off_account": "Account",
+    "write_off_cost_center": "Cost Center",
+    "tc_name": "Terms and Conditions",
+    "letter_head": "Letter Head",
+    "language": "Language",
+    "select_print_heading": "Print Heading",
+    "inter_company_invoice_reference": "Purchase Invoice",
+    "customer_group": "Customer Group",
+    "debit_to": "Account",
+    "party_account_currency": "Currency",
+    "sales_partner": "Sales Partner",
+    "sales_team": "Sales Team",
+    "auto_repeat": "Auto Repeat",
+    "unrealized_profit_loss_account": "Account",
+    "represents_company": "Company",
+    "set_target_warehouse": "Warehouse",
+    "additional_discount_account": "Account",
+    "dispatch_address_name": "Address",
+    "subscription": "Subscription",
+    "incoterm": "Incoterm",
+    "coupon_code": "Coupon Code",
+    "utm_medium": "UTM Medium",
+    "utm_campaign": "UTM Campaign",
+    "utm_source": "UTM Source",
+    "company_contact_person": "Contact",
+    "pos_closing_entry": "POS Closing Entry",
+    "item_wise_tax_details": "Item Wise Tax Detail",
+    "tax_withholding_group": "Tax Withholding Group",
+    "tax_withholding_entries": "Tax Withholding Entry"
+  },
+  "business_rules": [
+    "Rule enforced in validate",
+    "Rule enforced in validate_accounts",
+    "Rule enforced in validate_for_repost",
+    "Rule enforced in validate_fixed_asset",
+    "Rule enforced in validate_item_cost_centers",
+    "Rule enforced in validate_income_account",
+    "Rule enforced in validate_pos_return",
+    "Rule enforced in validate_pos_paid_amount",
+    "Rule enforced in check_if_consolidated_invoice",
+    "Rule enforced in check_if_created_using_pos_and_pos_closing_entry_generated",
+    "Rule enforced in check_credit_limit",
+    "Rule enforced in validate_time_sheets_are_submitted",
+    "Rule enforced in validate_debit_to_acc",
+    "Rule enforced in validate_with_previous_doc",
+    "Rule enforced in validate_auto_set_posting_time",
+    "Rule enforced in validate_proj_cust",
+    "Rule enforced in validate_pos",
+    "Rule enforced in validate_created_using_pos",
+    "Rule enforced in validate_full_payment",
+    "Rule enforced in validate_pos_opening_entry",
+    "Rule enforced in validate_warehouse",
+    "Rule enforced in validate_delivery_note",
+    "Rule enforced in validate_subcontracted_sales_order",
+    "Rule enforced in validate_scio_self_rm_qty",
+    "Rule enforced in validate_write_off_account",
+    "Rule enforced in validate_account_for_change_amount",
+    "Rule enforced in validate_dropship_item",
+    "Rule enforced in check_prev_docstatus",
+    "Rule enforced in validate_inter_company_party",
+    "Rule enforced in validate_inter_company_transaction",
+    "Rule enforced in _validate_address_link",
+    "Rule enforced in check_if_return_invoice_linked_with_payment_entry"
+  ]
+}

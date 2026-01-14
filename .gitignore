@@ -1,0 +1,14 @@
+# Virtual environment
+venv/
+
+# ERPNext source (external dependency)
+erpnext/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+

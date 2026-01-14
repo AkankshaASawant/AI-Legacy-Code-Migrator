@@ -1,0 +1,63 @@
+class SalesInvoice
+SalesInvoice --> Customer
+SalesInvoice --> Project
+SalesInvoice --> POS Profile
+SalesInvoice --> Company
+SalesInvoice --> Cost Center
+SalesInvoice --> Sales Invoice
+SalesInvoice --> Sales Invoice
+SalesInvoice --> Address
+SalesInvoice --> Contact
+SalesInvoice --> Territory
+SalesInvoice --> Address
+SalesInvoice --> Address
+SalesInvoice --> Currency
+SalesInvoice --> Price List
+SalesInvoice --> Currency
+SalesInvoice --> Warehouse
+SalesInvoice --> Sales Invoice Item
+SalesInvoice --> Pricing Rule Detail
+SalesInvoice --> Packed Item
+SalesInvoice --> Sales Invoice Timesheet
+SalesInvoice --> Sales Taxes and Charges Template
+SalesInvoice --> Shipping Rule
+SalesInvoice --> Tax Category
+SalesInvoice --> Sales Taxes and Charges
+SalesInvoice --> Loyalty Program
+SalesInvoice --> Account
+SalesInvoice --> Cost Center
+SalesInvoice --> Sales Invoice Advance
+SalesInvoice --> Payment Terms Template
+SalesInvoice --> Payment Schedule
+SalesInvoice --> Account
+SalesInvoice --> Sales Invoice Payment
+SalesInvoice --> Account
+SalesInvoice --> Account
+SalesInvoice --> Cost Center
+SalesInvoice --> Terms and Conditions
+SalesInvoice --> Letter Head
+SalesInvoice --> Language
+SalesInvoice --> Print Heading
+SalesInvoice --> Purchase Invoice
+SalesInvoice --> Customer Group
+SalesInvoice --> Account
+SalesInvoice --> Currency
+SalesInvoice --> Sales Partner
+SalesInvoice --> Sales Team
+SalesInvoice --> Auto Repeat
+SalesInvoice --> Account
+SalesInvoice --> Company
+SalesInvoice --> Warehouse
+SalesInvoice --> Account
+SalesInvoice --> Address
+SalesInvoice --> Subscription
+SalesInvoice --> Incoterm
+SalesInvoice --> Coupon Code
+SalesInvoice --> UTM Medium
+SalesInvoice --> UTM Campaign
+SalesInvoice --> UTM Source
+SalesInvoice --> Contact
+SalesInvoice --> POS Closing Entry
+SalesInvoice --> Item Wise Tax Detail
+SalesInvoice --> Tax Withholding Group
+SalesInvoice --> Tax Withholding Entry
