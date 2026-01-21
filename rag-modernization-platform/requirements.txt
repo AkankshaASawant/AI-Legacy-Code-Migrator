@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+pyyaml
+scikit-learn
+numpy
+rank-bm25
+sentence-transformers
+faiss-cpu
+ragas
+datasets
+mlflow
+networkx
+streamlit
+requests

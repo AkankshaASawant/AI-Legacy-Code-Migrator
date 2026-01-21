@@ -1,0 +1,12 @@
+{
+  "name": "rag-modernization",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.85.0" },
+  "activationEvents": ["onCommand:rag.ask"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "rag.ask", "title": "Ask RAG Question" }
+    ]
+  }
+}

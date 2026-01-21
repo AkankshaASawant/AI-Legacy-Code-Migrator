@@ -1,0 +1,212 @@
+- question: "What happens when a Sales Invoice is submitted?"
+  expected_concepts:
+    - on_submit
+    - GL Entry
+    - Stock Ledger
+
+# QA Evaluator Question Set (ERPNext – Sales Invoice Focus)
+
+# 🟢 Level 1 — Entity & Schema Understanding (Basic Retrieval)
+
+- question: "What is a Sales Invoice in ERPNext?"
+  expected_concepts:
+    - customer
+    - billing
+    - goods
+    - services
+    - payment
+    - accounts receivable
+
+- question: "Which DocType is used to represent a Sales Invoice?"
+  expected_concepts:
+    - Sales Invoice
+    - DocType
+
+- question: "What are the mandatory fields in a Sales Invoice?"
+  expected_concepts:
+    - customer
+    - posting_date
+    - company
+    - items
+
+- question: "How are items represented inside a Sales Invoice?"
+  expected_concepts:
+    - Sales Invoice Item
+    - child table
+    - items
+    - table
+
+- question: "Which field stores the total invoice amount?"
+  expected_concepts:
+    - grand_total
+    - total
+    - amount
+
+# 🟡 Level 2 — Relationships & References (Intermediate Retrieval)
+
+- question: "Which DocType does the customer field link to in Sales Invoice?"
+  expected_concepts:
+    - Customer
+    - Link
+    - DocType
+
+- question: "What is the relationship between Sales Invoice and Sales Invoice Item?"
+  expected_concepts:
+    - parent-child
+    - child table
+    - one-to-many
+    - table
+
+- question: "Which accounts are affected when a Sales Invoice is submitted?"
+  expected_concepts:
+    - Accounts Receivable
+    - debit
+    - revenue
+    - credit
+    - tax
+
+- question: "How does Sales Invoice interact with the General Ledger?"
+  expected_concepts:
+    - GL Entry
+    - make_gl_entries
+    - debit
+    - credit
+    - accounting
+
+- question: "Which controller class does Sales Invoice inherit from?"
+  expected_concepts:
+    - SellingController
+    - AccountsController
+    - controller
+    - inheritance
+
+# 🟠 Level 3 — Business Rules & Validations (Logic Extraction)
+
+- question: "What validations are performed before saving a Sales Invoice?"
+  expected_concepts:
+    - validate
+    - customer
+    - items
+    - mandatory
+    - credit limit
+    - duplicate
+
+- question: "How does ERPNext enforce customer credit limits?"
+  expected_concepts:
+    - credit limit
+    - customer
+    - validation
+    - frappe.throw
+    - outstanding
+
+- question: "When is tax calculation triggered for a Sales Invoice?"
+  expected_concepts:
+    - calculate_taxes_and_totals
+    - validate
+    - save
+    - before_save
+
+- question: "What happens if a customer exceeds their credit limit?"
+  expected_concepts:
+    - validation error
+    - frappe.throw
+    - warning
+    - block
+    - credit limit
+
+- question: "How are discounts applied on Sales Invoice items?"
+  expected_concepts:
+    - discount
+    - percentage
+    - amount
+    - calculate_taxes_and_totals
+    - rate
+
+# 🔵 Level 4 — Side Effects & System Behavior (Advanced Reasoning)
+
+- question: "What happens internally when a Sales Invoice is submitted?"
+  expected_concepts:
+    - on_submit
+    - GL entries
+    - stock
+    - outstanding
+    - ledger
+    - workflow
+
+- question: "How does submitting a Sales Invoice affect stock levels?"
+  expected_concepts:
+    - stock ledger
+    - update_stock
+    - inventory
+    - stock entry
+    - delivery note
+
+- question: "What GL entries are created during Sales Invoice submission?"
+  expected_concepts:
+    - Accounts Receivable
+    - debit
+    - credit
+    - tax
+    - revenue
+    - income
+
+- question: "Which methods are triggered during on_submit()?"
+  expected_concepts:
+    - make_gl_entries
+    - update_stock_ledger
+    - update_outstanding
+    - on_submit
+
+- question: "How does ERPNext update outstanding amounts after invoice submission?"
+  expected_concepts:
+    - outstanding_amount
+    - customer
+    - update_outstanding
+    - payment entry
+    - allocation
+
+# 🔴 Level 5 — Architecture & Migration Readiness (Expert-Level)
+
+- question: "Which layers of the ERPNext architecture handle Sales Invoice logic?"
+  expected_concepts:
+    - DocType
+    - controller
+    - model
+    - database
+    - presentation
+    - API
+
+- question: "How is business logic separated from schema in ERPNext DocTypes?"
+  expected_concepts:
+    - JSON schema
+    - Python controller
+    - separation
+    - model
+    - metadata
+
+- question: "What code files would need to be migrated to move Sales Invoice logic to another framework?"
+  expected_concepts:
+    - sales_invoice.py
+    - sales_invoice.json
+    - controller
+    - hooks
+    - validations
+    - permissions
+
+- question: "Which parts of Sales Invoice logic are reusable across other transaction DocTypes?"
+  expected_concepts:
+    - SellingController
+    - AccountsController
+    - tax calculation
+    - GL entries
+    - inheritance
+
+- question: "What challenges would arise when migrating Sales Invoice logic to a Java Spring Boot system?"
+  expected_concepts:
+    - framework differences
+    - ORM
+    - Python to Java
+    - business logic
+    - hooks
+    - validation
+    - architecture
